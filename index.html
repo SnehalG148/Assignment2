@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 2</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Css     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google ICON -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" />
+
+    <!-- Boxicons icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Quill Css -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="navbar navbar-expand px-3 border-bottom">
+                    <button class="btn" type="button" data-bs-theme="">
+                        <span class="">
+                            <div class="spinner-grow spinner-grow-sm" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </span>
+                    </button>
+                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/TCC logo2.svg">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-5">
+                            <a class="nav-link text-black" aria-current="page" href="#"><span class="fs-6">Create New
+                                    Learning Path</span>
+                                <h6 class="text-secondary" style="font-size: 12px;">Learning Paths > Learning Path >
+                                    Create New Learning Path
+                                    </h6>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <img src="assets/flag.png" class="mt-2 me-2" style="height: 25px; width:25px;">
+                        <div class="mt-1 fw-2">EN(UK)
+                            <img src="assets/Path 113721.svg">
+                            <img src="assets/Group 195511.svg" class="ms-4">
+                            <img src="assets/Group 171936.svg" class="ms-4">
+                            <img src="assets/Group 171975.png" class="ms-4">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Sidebar -->
+            <div class="wrapper gx-0">
+                <aside id="sidebar">
+                    <!-- content for sidebar -->
+                    <div class="h-100 bg-body-tertiary">
+                        <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary"
+                            style="width: 280px; height: 100vh;">
+                            <ul class="sidebar-nav">
+                                <li class="sidebar-item mt-2">
+                                    <a href="#" class="sidebar-link">
+                                        <img src="assets/dashboard.svg">
+                                        <span class="sidebar-content">DASHBOARD<span class="right-symbol"
+                                                style="margin-left: 70px;"><img
+                                                    src="assets/chevron_right.svg"></span></span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item mt-3">
+                                    <a href="#" class="sidebar-link">
+                                        <img src="assets/Group 195778.svg" class="mr-4">
+                                        <span class="sidebar-content text-black">TEAM MEMBERS<span class="right-symbol1"
+                                                style="margin-left: 35px;"><img
+                                                    src="assets/chevron_right.svg"></span></span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item mt-3">
+                                    <a href="#" class="sidebar-link">
+                                        <img src="assets/blueprint.png">
+                                        <span class="sidebar-content">PROJECTS<span class="right-symbol"
+                                                style="margin-left: 90px;"><img
+                                                    src="assets/chevron_right.svg"></span></span>
+
+                                    </a>
+                                </li>
+                                <li class="sidebar-item mt-3">
+                                    <a href="#" class="sidebar-link">
+                                        <img src="assets/dashboard (3).svg">
+                                        <span class="sidebar-content">CLIENTS<span class="right-symbol"
+                                                style="margin-left: 95px;"><img
+                                                    src="assets/chevron_right.svg"></span></span>
+
+                                    </a>
+                                </li>
+                                <li class="sidebar-item mt-3">
+                                    <a href="#" class="sidebar-link" style="background-color:#deeaee;">
+                                        <img src="assets/dashboard(4).svg">
+                                        <span class="sidebar-content">LEARNING PATHS<span class="right-symbol"
+                                                style="margin-left: 40px;"><img
+                                                    src="assets/Group 193377.svg"></span></span>
+                                    </a>
+                                    <ul class="">
+                                        <li class="sidebar-item">
+                                            <a href="#" class="sidebar-link">
+                                                <img src="assets/dashboard (1).svg">
+                                                <span class="sidebar-content text-black">Learning Path</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-item">
+                                            <a href="#" class="sidebar-link">
+                                                <img src="assets/dashboard (2).svg">
+                                                <span class="sidebar-content">Courses</span>
+                                            </a>
+                                        </li>
+                                        <li class="sidebar-item">
+                                            <a href="#" class="sidebar-link">
+                                                <img src="assets/dashboard (5).svg">
+                                                <span class="sidebar-content">Skill Sets</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <div class="main mt-3">
+                    <main class="content px-3 py-2">
+                        <div class="container-fluid">
+                            <div class="d-md-none">
+                                <div>
+                                    <p class="mb-0" style="font-size: 20px; font-weight: 500;">Create New
+                                        Learning
+                                        Path</p>
+                                </div>
+                                <div class="mt-3">
+                                    <button type="button" class="btn btn-outline-danger">CANCEL</button>
+                                    <button type="button" class="btn btn-primary savebt">SAVE</button>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-block col-lg-12">
+                                <div class="mainhead d-flex justify-content-between bg-light ">
+                                    <div class="mob p-2">
+                                        <span>
+                                            <p class="mb-0" style="font-size: 20px; font-weight: 500;">Create New
+                                                Learning
+                                                Path</p>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex p-2 gap-3 justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-outline-danger">CANCEL</button>
+                                        <button type="button" class="btn btn-primary savebt">SAVE</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Profile -->
+                            <div class="row col-12">
+                                <div class="pro-section row">
+                                    <div class="col-md-12 col-lg-2">
+                                        <img src="assets/Group 171973.png" class="border"
+                                            style="height: 140px; width: 140px; margin-left: 60px; border-radius: 50%;">
+                                    </div>
+                                    <div class="col-md-12  col-lg-10">
+                                        <form class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label">Learning Path</label>
+                                                <input type="email" class="box1 form-control" id="inputEmail4"
+                                                    placeholder="title">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Select Courses
+                                                </label>
+                                                <input type="password" class="box1 form-control" id="inputPassword4">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-floating">
+                                                    <p class="mb-2">Description</p>
+                                                    <div class="box"></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="row" style="margin-left: 60px; font-weight: 500;">
+                                <h6>Courses Added</h6>
+                            </div>
+                            <br>
+                            <!-- cards data -->
+                            <div class="container col-xxl-8 px-4">
+                                <div class="d-md-none">
+                                    <hr>
+                                    <div class="col-lg-4 mt-4">
+                                        <img src="assets/Group 192701.png" class="bd-placeholder-img rounded-circle"
+                                            width="100" height="100">
+                                        <h2 class="fw-normal mt-2" style="font-weight: 600;">Web Development</h2>
+                                        <p class="mt-2 text-secondary">Duration <span class="ms-1"><img
+                                                    src="assets/Group 193161.svg"><span class="text-primary ms-2">80
+                                                    Hrs</span></span></p>
+                                        <p class="active">
+                                            <span class="small-text">HTML</span>
+                                            <span class="small-text">PYTHON</span>
+                                            <span class="small-text">CSS</span>
+                                            <span class="small-text">JAVA</span>
+                                            <span class="small-text"> BOOTSTRAP</span>
+                                            <span class="small-text">JAVASCRIPT</span>
+                                            <span class="num-text">+2</span>
+                                        </p>
+                                        <p class="people-descri mt-0"><span class="text-primary"
+                                                style="font-size: 14px;">https://app.intimepro.io/app/main/dashboard</span><br>
+                                            <span class="info">ID:adam.murphy@mail.com</span><br>
+                                            <span class="info">Password:qwerty123</span>
+                                        </p>
+                                        <img src="assets/Group 147565.svg" class="ms-2">
+                                    </div>
+                                    <hr>
+                                    <div class="col-lg-4 mt-4">
+                                        <img src="assets/Group 192701(2).png" class="bd-placeholder-img rounded-circle"
+                                            width="100" height="100">
+                                        <h2 class="fw-normal mt-2" style="font-weight: 600;">UI Development</h2>
+                                        <p class="mt-2 text-secondary">Duration <span class="ms-1"><img
+                                                    src="assets/Group 193161.svg"><span class="text-primary ms-2">85
+                                                    Hrs</span></span></p>
+                                        <p class="active">
+                                            <span class="small-text">HTML</span>
+                                            <span class="small-text">PYTHON</span>
+                                            <span class="small-text">CSS</span>
+                                            <span class="small-text">JAVA</span>
+                                            <span class="num-text">+3</span>
+                                        </p>
+                                        <p class="people-descri mt-0"><span class="text-primary"
+                                                style="font-size: 14px;">https://sample.edu/day</span><br>
+                                            <span class="info">ID:adam.murphy@mail.com</span><br>
+                                            <span class="info">Password:qwerty123</span>
+                                        </p>
+                                        <img src="assets/Group 147565.svg" class="ms-2">
+                                    </div>
+                                    <hr>
+                                    <div class="col-lg-4 mt-4">
+                                        <img src="assets/Group 1927019(3).png" class="bd-placeholder-img rounded-circle"
+                                            width="100" height="100">
+                                        <h2 class="fw-normal mt-2" style="font-weight: 600;">Power BI</h2>
+                                        <p class="mt-2 text-secondary">Duration <span class="ms-1"><img
+                                                    src="assets/Group 193161.svg"><span class="text-primary ms-2">65
+                                                    Hrs</span></span></p>
+                                        <p class="active">
+                                            <span class="small-text">HTML</span>
+                                            <span class="small-text">PYTHON</span>
+                                            <span class="small-text">CSS</span>
+                                            <span class="small-text">JAVA</span>
+                                            <span class="num-text">+3</span>
+                                        </p>
+                                        <p class="people-descri mt-0"><span class="text-primary"
+                                                style="font-size: 14px;">http://www.sample.org/head</span><br>
+                                            <span class="info">ID:adam.murphy@mail.com</span><br>
+                                            <span class="info">Password:qwerty123</span>
+                                        </p>
+                                        <img src="assets/Group 147565.svg" class="ms-2">
+                                    </div>
+                                    <hr>
+                                    <div class="col-lg-4 mt-4">
+                                        <img src="assets/Group 192701(1).png" class="bd-placeholder-img rounded-circle"
+                                            width="100" height="100">
+                                        <h2 class="fw-normal mt-2" style="font-weight: 600;">Database</h2>
+                                        <p class="mt-2 text-secondary">Duration <span class="ms-1"><img
+                                                    src="assets/Group 193161.svg"><span class="text-primary ms-2">72
+                                                    Hrs</span></span></p>
+                                        <p class="active">
+                                            <span class="small-text">CSS</span>
+                                            <span class="small-text">JAVA</span>
+                                            <span class="small-text"> BOOTSTRAP</span>
+                                            <span class="small-text">JAVASCRIPT</span>
+                                            <span class="num-text">+2</span>
+                                        </p>
+                                        <p class="people-descri mt-0"><span class="text-primary"
+                                                style="font-size: 14px;">http://www.sample.org/head</span><br>
+                                            <span class="info">ID:adam.murphy@mail.com</span><br>
+                                            <span class="info">Password:qwerty123</span>
+                                        </p>
+                                        <img src="assets/Group 147565.svg" class="ms-2">
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <!-- Table data -->
+                            <div class="board d-none d-md-block col-lg-12">
+                                <table width="100%">
+                                    <thead>
+                                        <tr class="courses-header-row active">
+                                            <td>Courses</td>
+                                            <td>Skill Sets</td>
+                                            <td>Description</td>
+                                            <td>Action</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="Course-data-row">
+                                            <td class="people">
+                                                <img src="assets/Group 192701.png" alt="">
+                                                <div class="people-de ms-4 mt-3">
+                                                    <h5>Web Development</h5>
+                                                    <p class="mt-2">Duration <span class="ms-1"><img
+                                                                src="assets/Group 193161.svg"><span
+                                                                class="text-primary ms-2">80 Hrs</span></span></p>
+                                                </div>
+                                            </td>
+                                            <td class="active">
+                                                <span class="small-text">HTML</span>
+                                                <span class="small-text">PYTHON</span>
+                                                <span class="small-text">CSS</span>
+                                                <span class="small-text">JAVA</span>
+                                                <span class="small-text"> BOOTSTRAP</span>
+                                                <span class="small-text">JAVASCRIPT</span>
+                                                <span class="num-text">+2</span>
+                                            </td>
+                                            <td class="people-descri">
+                                                <span class="text-primary"
+                                                    style="font-size: 14px;">https://app.intimepro.io/app/main/dashboard</span><br>
+                                                <span class="info">ID:adam.murphy@mail.com</span><br>
+                                                <span class="info">Password:qwerty123</span>
+                                            </td>
+                                            <td>
+                                                <img src="assets/Group 147565.svg" class="mt-4 ms-2">
+                                            </td>
+                                        </tr>
+
+                                        <tr class="Course-data-row">
+                                            <td class="people">
+                                                <img src="assets/Group 192701(2).png" alt="">
+                                                <div class="people-de ms-4 mt-3">
+                                                    <h5>UI Development</h5>
+                                                    <p class="mt-2">Duration <span class="ms-1"><img
+                                                                src="assets/Group 193161.svg"><span
+                                                                class="text-primary ms-2">85 Hrs</span></span></p>
+                                                </div>
+                                            </td>
+                                            <td class="active">
+                                                <span class="small-text">HTML</span>
+                                                <span class="small-text">PYTHON</span>
+                                                <span class="small-text">CSS</span>
+                                                <span class="small-text">JAVA</span>
+                                                <span class="num-text">+3</span>
+                                            </td>
+                                            <td class="people-descri">
+                                                <span class="text-primary"
+                                                    style="font-size: 14px;">https://sample.edu/day</span><br>
+                                                <span class="info">ID:adam.murphy@mail.com</span><br>
+                                                <span class="info">Password:qwerty123</span>
+                                            </td>
+                                            <td>
+                                                <img src="assets/Group 147565.svg" class="mt-4 ms-2">
+                                            </td>
+                                        </tr>
+
+                                        <tr class="Course-data-row">
+                                            <td class="people">
+                                                <img src="assets/Group 1927019(3).png" alt="">
+                                                <div class="people-de ms-4 mt-3">
+                                                    <h5>Power BI</h5>
+                                                    <p class="mt-2">Duration <span class="ms-1"><img
+                                                                src="assets/Group 193161.svg"><span
+                                                                class="text-primary ms-2">65 Hrs</span></span></p>
+                                                </div>
+                                            </td>
+                                            <td class="active">
+                                                <span class="small-text">HTML</span>
+                                                <span class="small-text">PYTHON</span>
+                                                <span class="small-text">CSS</span>
+                                                <span class="small-text">JAVA</span>
+                                                <span class="num-text">+3</span>
+                                            </td>
+                                            <td class="people-descri">
+                                                <span class="text-primary"
+                                                    style="font-size: 14px;">http://www.sample.org/head</span><br>
+                                                <span class="info">ID:adam.murphy@mail.com</span><br>
+                                                <span class="info">Password:qwerty123</span>
+                                            </td>
+                                            <td>
+                                                <img src="assets/Group 147565.svg" class="mt-4 ms-2">
+                                            </td>
+                                        </tr>
+
+                                        <tr class="Course-data-row">
+                                            <td class="people">
+                                                <img src="assets/Group 192701(1).png" alt="">
+                                                <div class="people-de ms-4 mt-3">
+                                                    <h5>Database</h5>
+                                                    <p class="mt-2">Duration <span class="ms-1"><img
+                                                                src="assets/Group 193161.svg"><span
+                                                                class="text-primary ms-2">72 Hrs</span></span></p>
+                                                </div>
+                                            </td>
+                                            <td class="active">
+                                                <span class="small-text">CSS</span>
+                                                <span class="small-text">JAVA</span>
+                                                <span class="small-text"> BOOTSTRAP</span>
+                                                <span class="small-text">JAVASCRIPT</span>
+                                                <span class="num-text">+2</span>
+                                            </td>
+                                            <td class="people-descri">
+                                                <span class="text-primary"
+                                                    style="font-size: 14px;">http://www.sample.org/head</span><br>
+                                                <span class="info">ID:adam.murphy@mail.com</span><br>
+                                                <span class="info">Password:qwerty123</span>
+                                            </td>
+                                            <td>
+                                                <img src="assets/Group 147565.svg" class="mt-4 ms-2">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- badges -->
+                            <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a class="active" href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">-</a>
+                                <a href="#">90</a>
+                                <a href="#">&raquo;</a>
+                            </div>
+
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
